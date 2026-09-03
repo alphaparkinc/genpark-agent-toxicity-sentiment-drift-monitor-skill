@@ -1,0 +1,39 @@
+{
+  "name": "genpark-agent-toxicity-sentiment-drift-monitor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time conversational toxicity score analyzer, sentiment drift tracker, and empathy de-escalation recommender.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "governance",
+  "tags": [
+    "whylabs",
+    "langkit",
+    "toxicity-monitor",
+    "sentiment-drift",
+    "agent-telemetry"
+  ],
+  "inputs": {
+    "conversation_turn": {
+      "type": "string"
+    },
+    "sentiment_baseline": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "telemetry_id": {
+      "type": "string"
+    },
+    "toxicity_score": {
+      "type": "number"
+    },
+    "sentiment_valence": {
+      "type": "number"
+    },
+    "telemetry_feed_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
